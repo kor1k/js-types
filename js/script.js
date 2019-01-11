@@ -39,8 +39,55 @@
 // }
 
 
+// let number = prompt('enter ur number');
 
-let number = prompt('enter ur number');
+// console.log(`Full number is: ${'+38'+number}`);
 
-console.log(`Full number is: ${'+38'+number}`);
+// console.log(Math.round(Math.random()*10000)/100); // генератор XXX.XX  (0 to 100, with 2 numbers after ','
 
+
+// let a = 123123;
+//
+// switch (a) {
+//     case 3:
+//         console.log('equals = 3');
+//         break;
+//     case 10:
+//         console.log('equals = 10');
+//         break;
+//     default:
+//         console.log('something else')
+// }
+
+
+// let rand = Math.round(Math.random()*100);
+//
+// switch (true) {
+//     case (rand<50):
+//         console.log('random is less than 30');
+//         break;
+//     case (rand>=30 && rand<50):
+//         console.log('between 30 and 50');
+//         break;
+//     default:
+//         console.log('random is more than 50')
+// }
+
+
+///////////////////////////////////////////////////////////////TASK/////////////////////////////////////////////////////////////////
+
+// 1) prompt - номер телефона
+// 2) номер должен == 10 и там не должно быть стринги
+
+
+let phoneNumber = prompt('Enter phone number');
+// let check = phoneNumber.length;
+if (phoneNumber.length == 10 && !isNaN(+phoneNumber)) {
+    console.log('Phone number is legit.')
+}
+else {
+    console.log('Wrong phone number.')
+}
+
+
+// console.log(phoneNumber.length);
