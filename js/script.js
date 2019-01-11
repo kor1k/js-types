@@ -1,3 +1,8 @@
+function reloadBtn() {
+    location.reload();
+}
+
+
 // let a =123;
 //
 // let b = false;
@@ -74,20 +79,27 @@
 // }
 
 
-///////////////////////////////////////////////////////////////TASK/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////START OF TASK/////////////////////////////////////////////////////////////////
 
 // 1) prompt - номер телефона
 // 2) номер должен == 10 и там не должно быть стринги
 
 
-let phoneNumber = prompt('Enter phone number');
-// let check = phoneNumber.length;
-if (phoneNumber.length == 10 && !isNaN(+phoneNumber)) {
-    console.log('Phone number is legit.')
-}
-else {
-    console.log('Wrong phone number.')
-}
+let phoneNumberChecker = prompt('Enter phone number');
+// if (phoneNumberChecker.length == 10 && !isNaN(+phoneNumberChecker)) {
+//     console.log('Phone number is legit.')
+// }
+// else {
+//     console.log('Wrong phone number.')
+// }
+
+//console.log(phoneNumberChecker.length);
 
 
-// console.log(phoneNumber.length);
+
+let secondVersionOfChecker = (phoneNumberChecker.length == 10 && !isNaN(+phoneNumberChecker)) ? 'legit' : 'not legit';
+
+console.log(secondVersionOfChecker);
+
+
+///////////////////////////////////////////////////////////////END OF TASK/////////////////////////////////////////////////////////////////
